@@ -1,11 +1,11 @@
 import java.util.Scanner;
-
+//exercise 12  count letter a in the String
 public class CountAinString {
 
         public static void main(String Args[]){
 
             Scanner sc =new Scanner(System.in);
-            System.out.println("Enter the word: ");
+            System.out.println("Enter only single WORD: ");
             String someString = sc.next();
             char myChar = 'a';
             int count = 0;

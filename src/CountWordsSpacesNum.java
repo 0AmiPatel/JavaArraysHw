@@ -2,7 +2,7 @@ public class CountWordsSpacesNum {
             //exercise 13 - count words and spaces
 
     // Mmethod count
-    public static void count(String x) {
+     static void count(String x) {
         char[] ch = x.toCharArray();                         //  charactors of string x are stored as an array elements in array ch
         int letter = 0;
         int space = 0;

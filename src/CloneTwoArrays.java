@@ -2,26 +2,27 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 
-//incomplete programme
+//      Exercise 14 clone an array list to another array list
 public class CloneTwoArrays {
 
 
-    public static void main(String args[]) {
-        ArrayList<String> firstArrayList = new ArrayList<>();
-        firstArrayList.add("One");
-        firstArrayList.add("Two");
-        firstArrayList.add("Three");
-        firstArrayList.add("Four");
-        firstArrayList.add("Five");
-        firstArrayList.add("Six");
-        //copy array list content into another array list
-        ArrayList<String> secondArrayList = new ArrayList<>();
-        secondArrayList.addAll(firstArrayList);
-        //print all the content of array list
-        Iterator itr = secondArrayList.iterator();
-         while(itr.hasNext()) {
-            System.out.println(itr.next());
+
+        public static void main(String a[]){
+            ArrayList<String> al = new ArrayList<String>()  //added elements in arraylist
+            {{
+                add("Sardar Patel");
+                add("Shahid Bagatsinh");
+                add("Subhashchandra Boze");
+                add("Lala Lajpatrai");
+
+            }};
+
+            System.out.println("Original ArrayList: "+al);
+
+            ArrayList<String> al2 = (ArrayList<String>)al.clone(); // using clone method
+
+
+            System.out.println("Cloned ArrayList:"+al2);
         }
 
-    }
 }
