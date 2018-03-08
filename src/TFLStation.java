@@ -16,7 +16,7 @@ public class TFLStation {
             add("London Bridge");
             add("Baker Street");
             add("Oxford Circus");
-            add("Waterloo ");
+            add("Waterloo");
             add("Regents Park ");
             add("Bond Street");
             add("Green Park");
@@ -28,12 +28,11 @@ public class TFLStation {
             add("Holbourne");
             add("Tottenham Court");
             add("Chancery Lane");
-            add("St. Pauls");
             add("Bank");
             add("Victoria");
-            add("Southwark ");
+            add("Southwark");
             add("Marylebone");
-            add("Piccadilly circus");
+            add("Piccadilly");
 
 
         }};
@@ -42,14 +41,15 @@ public class TFLStation {
         System.out.println("enter the Station name");
         String st = sc.next();
 
-        for (String s : stations) {
-                    }
-            if (stations.contains(st)){
+
+      if (stations.contains(st)) {
                 System.out.println(" Jubilee or Metropolitan line comes to this station");
             } else {
 
                 System.out.println("This Station does not come under zone 1");
             }
 
+
+        }
+
     }
-}
